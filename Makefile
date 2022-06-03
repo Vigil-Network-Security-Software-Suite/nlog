@@ -7,6 +7,6 @@ main.o:
 
 
 nlog: main.o
-	$(CC) $(CFLAGS) -o nlog -l 
+	$(CC) $(CFLAGS) -o nlog $^ /lib/libvigil.so
 clean:
 	rm *.o
